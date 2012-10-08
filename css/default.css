@@ -1,0 +1,409 @@
+/*----------------------------------------------------------------------------------------------------------------*\
+    RESET
+\*----------------------------------------------------------------------------------------------------------------*/
+/*
+RESET
+DEFAULT TEXT
+PAGE CONTAINERS
+FORMS
+HEADER
+FOOTER
+MEDIA QUERIES
+*/
+
+html, body, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, 
+del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, 
+label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+/* ----- Typography ----- */
+strong, b {
+    font-weight: bold; 
+    font-style: inherit;
+}
+
+em, i {
+    font-style: italic; 
+    font-weight: inherit;
+}
+
+small {
+    font-size: 0.75em;
+}
+
+del { 
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] { 
+    border-bottom: 1px dotted #ccc; 
+    cursor: help;
+}
+
+pre, code, kbd, samp {
+    font-family: monospace, sans-serif;
+}
+
+pre {
+    padding: 15px;
+    white-space: pre; 
+    white-space: pre-wrap; 
+    word-wrap: break-word;
+}
+
+/* ----- Quotes ----- */
+blockquote, q { 
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after { 
+    content: ""; 
+    content: none; 
+}
+
+/* ----- Links, Images & Embedded content----- */
+img, a {
+    border: 0;
+    outline: 0;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+:focus {
+    outline: 0;
+}
+
+.embedContainer {
+	width: 100%;
+	height: 0;
+	padding-bottom: 56.25%;	
+	overflow: hidden;	
+	position: relative;
+}
+
+.embedContainer iframe,
+.embedContainer object,
+.embedContainer embed {
+	width: 100%;
+	height: 100%;	
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* ----- Forms ----- */
+input, select, option, textarea {
+	padding: 0;
+	margin: 0;
+	border: 1px solid #ccc;	
+	background: #f5f5f5;	
+    font: inherit;
+    line-height: 1em;
+}
+
+input:focus,
+textarea: focus {
+	background: #fff;
+}
+
+input, select {
+    vertical-align: middle;
+}
+
+fieldset, legend {
+    border: 0;
+}
+
+/* ----- Tables ----- */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+td, th { 
+    vertical-align: top;
+}
+
+/* ----- Cursors ----- */
+a, button, select {
+    cursor: pointer;
+}
+
+input, textarea {
+    cursor: text;
+}
+
+/* ----- Other ----- */
+.clear {
+    float: none;
+    clear: both;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; 
+}
+
+
+
+
+
+/*----------------------------------------------------------------------------------------------------------------*\
+    DEFAULT TEXT
+\*----------------------------------------------------------------------------------------------------------------*/
+body {
+    background: #fff;
+    
+    color: #383838;
+    font-family: Arial, sans-serif;
+    font-size: 1em;
+    line-height: 1.5em;
+    
+    position: relative;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    margin-bottom: 5px;
+    
+    font-family: Arial, sans-serif;
+    color: #383838;
+    font-weight: bold;
+}
+
+h1, .h1 {
+    font-size: 2em;
+    line-height: 1em;
+}
+
+h2, .h2 {
+    font-size: 18px;
+    line-height: 1em;
+}
+
+h3, .h3 {
+    font-size: 16px;
+    line-height: 1em;
+}
+
+h4, .h4 {
+    font-size: 14px;
+    line-height: 1em;
+}
+
+h5, .h5 {
+    font-size: 14px;
+    line-height: 1em;
+}
+
+h6, .h6 {
+    font-size: 1em;
+    line-height: 1em;
+}
+
+p {
+    margin-bottom: 1em;
+}
+
+a {
+    color: #529926;
+    text-decoration: none;
+    
+    -webkit-transition: color 0.2s ease-in;  
+    -moz-transition: color 0.2s ease-in;  
+    -o-transition: color 0.2s ease-in;  
+    transition: color 0.2s ease-in; 
+}
+
+a:hover {
+    color: #d1474d;
+}
+
+
+
+
+
+/*----------------------------------------------------------------------------------------------------------------*\
+    PAGE CONTAINERS
+\*----------------------------------------------------------------------------------------------------------------*/
+.content {
+    max-width: 960px;
+    padding: 0 10px;
+    margin: 0 auto;
+    
+    position: relative;
+}
+
+.row {
+    width: 100%;
+    
+    background: #fff;
+    
+    position: relative;
+}
+
+.row.altBG {
+    background: #f5f5f5;
+}
+
+.oneCol, .twoCol, .threeCol, .fourCol, .fiveCol, .sixCol, .sevenCol, .eightCol, .nineCol, .tenCol, .elevenCol, .twelveCol {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.row:after,
+.content:after {
+    height: 0;
+    display: block;
+    content: "";
+    visibility: hidden;
+    clear: both;
+}
+
+.row .last {
+    margin-right: 0 !important;
+}
+
+.hideMobile,
+.showTablet {
+    display: none;
+}
+
+.hideResize {
+    display: block;
+}
+
+
+
+
+
+/*----------------------------------------------------------------------------------------------------------------*\
+    HEADER
+\*----------------------------------------------------------------------------------------------------------------*/
+.header {
+}
+
+
+
+
+
+/*----------------------------------------------------------------------------------------------------------------*\
+    NAV
+\*----------------------------------------------------------------------------------------------------------------*/
+.nav {
+}
+
+
+
+
+
+/*----------------------------------------------------------------------------------------------------------------*\
+    FOOTER
+\*----------------------------------------------------------------------------------------------------------------*/
+.footer {
+}
+
+
+
+
+
+/*----------------------------------------------------------------------------------------------------------------*\
+    MEDIA QUERIES
+\*----------------------------------------------------------------------------------------------------------------*/
+/* 320px */
+@media all and (min-width: 0px) {
+}
+
+/* 480px */
+@media all and (min-width: 480px) {
+    .hideMobile {
+        display: block;
+    }
+}
+
+/* 600px */
+@media all and (min-width: 600px) {
+    .oneCol, .twoCol, .threeCol, .fourCol, .fiveCol, .sixCol, .sevenCol, .eightCol, .nineCol, .tenCol, .elevenCol {
+        margin-right: 2%;
+        margin-bottom: 0;
+        float: left;
+    }
+
+    .row .oneCol {
+        width: 6.5%;
+    }
+    
+    .row .twoCol {
+        width: 15%;
+    }
+    
+    .row .threeCol {
+        width: 23.5%;
+    }
+    
+    .row .fourCol {
+        width: 32%;
+    }
+    
+    .row .fiveCol {
+        width: 40.5%;
+    }
+    
+    .row .sixCol {
+        width: 49%;
+    }
+    
+    .row .sevenCol {
+        width: 57.5%;
+    }
+    
+    .row .eightCol {
+        width: 66%;
+    }
+    
+    .row .nineCol {
+        width: 74.5%;
+    }
+    
+    .row .tenCol {
+        width: 83%;
+    }
+    
+    .row .elevenCol {
+        width: 91.5%;
+    }
+    
+    .row .twelveCol {
+        margin-bottom: 0;
+    }
+    
+    .showTablet {
+        display: block;
+    }
+}
+
+/* 768px */
+@media all and (min-width: 768px) {
+}
+
+/* 980px */
+@media all and (min-width: 980px) {
+    .hideResize {
+        dislay: block;
+    }
+}
