@@ -1,4 +1,4 @@
-CSS-Respond
+Respond
 ===========
 
-Responsive CSS framework
+Responsive framework
