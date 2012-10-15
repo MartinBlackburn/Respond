@@ -23,17 +23,23 @@ footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
     vertical-align: baseline;
 }
 
+/* ----- HTML 5 ----- */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
     display: block;
 }
 
+abbr[title], dfn[title] { 
+    border-bottom: 1px dotted #ccc; 
+    cursor: help;
+}
+
 /* ----- Typography ----- */
-strong, b {
+strong, mark, b {
     font-weight: bold; 
     font-style: inherit;
 }
 
-em, i {
+em, i, cite, q, address, dfn, var {
     font-style: italic; 
     font-weight: inherit;
 }
@@ -42,13 +48,13 @@ small {
     font-size: 0.75em;
 }
 
-del { 
+del, s { 
     text-decoration: line-through;
 }
 
-abbr[title], dfn[title] { 
-    border-bottom: 1px dotted #ccc; 
-    cursor: help;
+ins {
+    border-bottom: 1px solid #ccc; 
+	text-decoration: none;
 }
 
 pre, code, kbd, samp {
@@ -63,13 +69,12 @@ pre {
 }
 
 /* ----- Quotes ----- */
-blockquote, q { 
-    quotes: none;
+blockquote, q {
+    quotes: "" "";
 }
 
 blockquote:before, blockquote:after, q:before, q:after { 
-    content: ""; 
-    content: none; 
+    content: "";
 }
 
 /* ----- Links, Images & Embedded content----- */
@@ -115,7 +120,7 @@ input, select, option, textarea {
     line-height: 1em;
 }
 
-input:focus, textarea: focus {
+input:focus, textarea:focus {
     background: #fff;
 }
 
@@ -133,7 +138,12 @@ table {
     border-spacing: 0;
 }
 
-td, th { 
+caption, th, td {
+    text-align: left; 
+	font-weight: normal; 
+}
+
+table, th, td { 
     vertical-align: top;
 }
 
