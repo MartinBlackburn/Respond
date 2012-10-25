@@ -1,10 +1,10 @@
-#Respond framework
+#Respond
 
-This framework aims to help in creating responsive website by having a fluid grid with mediaqueries to resize content and collapse columns on smaller displays.
+Respond is a simple framework that aims to help in creating responsive websites and wireframes by having a fluid grid and mediaqueries to resize content and collapse columns on smaller displays.
 
-Grid shows the base file without using any other CSS
+Example will be a complete website built using Respond
 
-Example will show how a website could use the Respond framework
+Wireframe will show how to build a quick wireframe using Respond and its wireframe CSS
 
 ##How it works
 ```html
