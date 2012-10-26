@@ -37,7 +37,8 @@ img[alt=""] {
 
 
 /* Links whose 'href' is something questionable, or even empty */
-a[href="#"], a[href*="javascript"] {
+a[href="#"], 
+a[href*="javascript"] {
     outline: 5px solid yellow;
 }
 
@@ -53,7 +54,7 @@ ol > *not(li) {
 }
 
 
-/* Forms require an 'action' attribute */
+/* Forms require an 'action' and usually a 'method' attribute */
 form {
     outline: 5px solid red;
 }
@@ -67,8 +68,10 @@ form[method=""] {
 }
 
 
-/* Inputs elements have required attributes */
-input {
+/* Inputs elements have required 'type' and 'name' attributes */
+input,
+textarea,
+select {
     outline: 5px solid red;
 }
 
@@ -88,11 +91,15 @@ input[type="submit"][value] {
     outline: none;
 }
 
-input[name] {
+input[name],
+textarea[name],
+select[name] {
     outline: none;
 }
 
-input[name=""] {
+input[name=""],
+textarea[name=""],
+select[name=""] {
     outline: 5px solid red;
 }
 

@@ -239,26 +239,34 @@ label {
 	display: block;
 }
 
-input {
-	width: 100%;
-	padding: 5px;
-	border: 1px solid #ccc;
-	display: block;
-	
-	background: #f5f5f5;
-}
-
-textarea {
+input, textarea {
 	width: 100%;
     padding: 5px;
     border: 1px solid #ccc;
+    margin-bottom: 10px;
     display: block;
     
     background: #f5f5f5;
 }
 
+textarea {
+	height: 150px;
+}
+
 input:focus, textarea:focus {
     background: #fff;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+	width: auto;
+	padding: 0;
+	display: inline-block;
+}
+
+select {
+	margin-bottom: 10px;
+	display: block;
 }
 
 .checkbox {
