@@ -5,48 +5,78 @@
 /*
 * This stylesheet should be enabled to help check for errors and some invalid markup.
 * 
-* This should not be relied upon entirely, it it here to aid your usual checks, like validating your markup.
+* This should not be relied upon, it is here to aid your usual checks, like validating your markup.
 * 
 * Red = error
 * Yellow = double check
 * None = should be OK
 */
 
-/* check for empty elements */
+
+
+
+
+/*----------------------------------------------------------------------------------------------------------------*\
+    EMPTY ELEMENTS
+\*----------------------------------------------------------------------------------------------------------------*/
 :empty {
     outline: 5px solid yellow;
 }
 
-.clear:empty {
+/* Ignore elements that are OK to be empty */
+.clear:empty,
+textarea:empty,
+input:empty {
 	outline: none;
 }
 
 
-/* Images should have alt text, empty alt text is OK but should be doubled checked */
-img {
+
+
+
+/*----------------------------------------------------------------------------------------------------------------*\
+    IMAGES
+\*----------------------------------------------------------------------------------------------------------------*/
+/* No alt attribute */
+img:not([not]) {
     outline: 5px solid red;
 }
 
-img[alt] {
-    outline: none;
-}
-
+/* Empty alt text is OK but should be doubled checked */
 img[alt=""] {
     outline: 5px solid yellow;
 }
 
 
-/* Links whose 'href' is something questionable, or even empty */
+
+
+
+/*----------------------------------------------------------------------------------------------------------------*\
+    LINKS
+\*----------------------------------------------------------------------------------------------------------------*/
+/* No href attribute */
+a:not([href]) {
+    outline: 5px solid red;
+}
+
+/* Questionable href */
 a[href="#"], 
 a[href*="javascript"] {
     outline: 5px solid yellow;
 }
 
+/* Empty href */
 a[href=""] {
 	outline: 5px solid yellow;
 }
 
 
+
+
+
+/*----------------------------------------------------------------------------------------------------------------*\
+    LISTS
+\*----------------------------------------------------------------------------------------------------------------*/
 /* List should only have li's as children */
 ul > *not(li),
 ol > *not(li) {
@@ -54,61 +84,82 @@ ol > *not(li) {
 }
 
 
-/* Forms require an 'action' and usually a 'method' attribute */
-form {
+
+
+
+/*----------------------------------------------------------------------------------------------------------------*\
+    FORMS
+\*----------------------------------------------------------------------------------------------------------------*/
+/* No method attribute */
+form:not([method]) {
     outline: 5px solid red;
 }
 
-form[action] {
-    outline: none;
+/* No action attribute */
+form:not([action]) {
+    outline: 5px solid red;
 }
 
+/* Has an empty action */
+form[action=""] {
+    outline: 5px solid red !important;
+}
+
+/* Has an empty method */
 form[method=""] {
-    outline: 5px solid yellow;
+    outline: 5px solid yellow !important;
 }
 
 
-/* Inputs elements have required 'type' and 'name' attributes */
-input,
-textarea,
-select {
+
+
+
+/*----------------------------------------------------------------------------------------------------------------*\
+    FORM ELEMENTS
+\*----------------------------------------------------------------------------------------------------------------*/
+/* No name attribute */
+input:not([name]) {
     outline: 5px solid red;
 }
 
-input[type] {
-    outline: none;
-}
-
-input[type=""] {
+/* No type attribute */
+input:not([type]) {
     outline: 5px solid red;
 }
 
-input[type="submit"] {
-    outline: 5px solid red;
-}
-
-input[type="submit"][value] {
-    outline: none;
-}
-
-input[name],
-textarea[name],
-select[name] {
-    outline: none;
-}
-
+/* Has an empty name */
 input[name=""],
 textarea[name=""],
 select[name=""] {
     outline: 5px solid red;
 }
 
+/* Has an empty type */
+input[type=""] {
+    outline: 5px solid red;
+}
 
+/* Submit has no value */
+input[type="submit"]:not([value]) {
+    outline: 5px solid red;
+}
+
+/* Submit input has an empty value */
+input[type="submit"][value=""] {
+    outline: 5px solid red;
+}
+
+
+
+
+
+/*----------------------------------------------------------------------------------------------------------------*\
+    MISC
+\*----------------------------------------------------------------------------------------------------------------*/
 /* Avoid inline styles */
 [style] {
     outline: 5px solid yellow;
 }
-
 
 /* Avoid IDs for styling, double check to make sure this isn't doing any styling */
 [id] {
