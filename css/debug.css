@@ -5,7 +5,7 @@
 /*
 * This stylesheet should be enabled to help check for errors and some invalid markup.
 * 
-* This should not be relied upon entirely, it it here to aid your usual checks, like validating you markup.
+* This should not be relied upon entirely, it it here to aid your usual checks, like validating your markup.
 * 
 * Red = error
 * Yellow = double check
@@ -16,6 +16,7 @@
 :empty {
     outline: 5px solid yellow;
 }
+
 
 /* Images should have alt text, empty alt text is OK but should be doubled checked */
 img {
@@ -30,6 +31,7 @@ img[alt=""] {
     outline: 5px solid yellow;
 }
 
+
 /* Links whose 'href' is something questionable, or even empty */
 a[href="#"], a[href*="javascript"] {
     outline: 5px solid yellow;
@@ -39,11 +41,13 @@ a[href=""] {
 	outline: 5px solid yellow;
 }
 
+
 /* List should only have li's as children */
 ul > *not(li),
 ol > *not(li) {
 	outline: 5px solid red;
 }
+
 
 /* Forms require an 'action' attribute */
 form {
@@ -57,6 +61,7 @@ form[action] {
 form[method=""] {
     outline: 5px solid yellow;
 }
+
 
 /* Inputs elements have required attributes */
 input {
@@ -87,10 +92,12 @@ input[name=""] {
     outline: 5px solid red;
 }
 
+
 /* Avoid inline styles */
 [style] {
     outline: 5px solid yellow;
 }
+
 
 /* Avoid IDs for styling, double check to make sure this isn't doing any styling */
 [id] {
