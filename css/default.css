@@ -206,11 +206,11 @@ a {
     color: #01a7c7;
     text-decoration: none;
     
-    -webkit-transition: color 0.2s ease-in;  
-    -moz-transition: color 0.2s ease-in;  
-    -ms-transition: color 0.2s ease-in;  
-    -o-transition: color 0.2s ease-in;  
-    transition: color 0.2s ease-in; 
+    -webkit-transition: all 0.2s ease-in;  
+    -moz-transition: all 0.2s ease-in;  
+    -ms-transition: all 0.2s ease-in;  
+    -o-transition: all 0.2s ease-in;  
+    transition: all 0.2s ease-in; 
 }
 
 a:hover {
@@ -235,10 +235,12 @@ button, .button {
     FORM ELEMENTS
 \*----------------------------------------------------------------------------------------------------------------*/
 label {
+	width: 100%;
 	display: block;
 }
 
 input {
+	width: 100%;
 	padding: 5px;
 	border: 1px solid #ccc;
 	display: block;
@@ -247,6 +249,7 @@ input {
 }
 
 textarea {
+	width: 100%;
     padding: 5px;
     border: 1px solid #ccc;
     display: block;
@@ -365,47 +368,47 @@ fieldset, legend {
         float: left;
     }
 
-    .row .oneCol {
+    .oneCol {
         width: 6.5%;
     }
     
-    .row .twoCol {
+    .twoCol {
         width: 15%;
     }
     
-    .row .threeCol {
+    .threeCol {
         width: 23.5%;
     }
     
-    .row .fourCol {
+    .fourCol {
         width: 32%;
     }
     
-    .row .fiveCol {
+    .fiveCol {
         width: 40.5%;
     }
     
-    .row .sixCol {
+    .sixCol {
         width: 49%;
     }
     
-    .row .sevenCol {
+    .sevenCol {
         width: 57.5%;
     }
     
-    .row .eightCol {
+    .eightCol {
         width: 66%;
     }
     
-    .row .nineCol {
+    .nineCol {
         width: 74.5%;
     }
     
-    .row .tenCol {
+    .tenCol {
         width: 83%;
     }
     
-    .row .elevenCol {
+    .elevenCol {
         width: 91.5%;
     }
     
