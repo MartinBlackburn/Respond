@@ -12,8 +12,8 @@ MEDIA QUERIES
 
 a, abbr, address, article, aside, audio, b, blockquote, body, canvas, caption, cite, code, dd, del, details, dfn, dl, 
 dt, em, fieldset, figcaption, figure, footer, form, header, hgroup, h1, h2, h3, h4, h5, h6, html, i, iframe, img, 
-input, ins, kbd, label, legend, li, mark, menu, nav, object, ol, option, p, pre, q, samp, section, select, small, 
-span, strong, sub, summary, sup, table, tbody, td, textarea, th, thead, time, tfoot, tr, ul, var, video {
+ins, kbd, label, legend, li, mark, menu, nav, object, ol, p, pre, q, samp, section, small, span, strong, sub, summary, 
+sup, table, tbody, td, th, thead, time, tfoot, tr, ul, var, video {
     margin: 0;
     padding: 0;
     border: 0;
