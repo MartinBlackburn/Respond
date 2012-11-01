@@ -43,17 +43,18 @@ Fader = function(fader)
         return fader.find(".sliderItem");
     }
     
-    //variable for all slides
+    //variable for all controls
     function controls() {
         return fader.find(".quick");
     }
     
-    //fadeout all slide
+    //fadeout all slides
     slides().fadeOut(0);
     
-    //set first slide to selected
+    //set first slide to selected, and fade it in
     slides().first().addClass('selected');
     slides().first().fadeIn(0);  
+    controls().first().addClass('selected');
     
     //auto scroll items
     var timer;
@@ -72,7 +73,7 @@ Fader = function(fader)
     //fade items when needed
     function fadeItem(slide)
     {
-        //get slide index's
+        //get current and next slide index
         var currentSlide = fader.find('.sliderItem.selected').index();
         var nextSlide = currentSlide + 1;
         
