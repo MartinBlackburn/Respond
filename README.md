@@ -35,6 +35,3 @@ Wireframe will show how to build a quick wireframe using Respond and its wirefra
 .content centers the content at a max width, it will contain all the columns in any combination that adds up to 12 or less.
 
 .last must be included on the last column to remove any unwated margin allowing all the columns fit on the page.
-
-###Notes
-Respond uses jQuery 1.8.2

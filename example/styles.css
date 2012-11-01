@@ -26,38 +26,6 @@
     padding: 24px 0;
 }
 
-.fader {
-	position: relative;
-}
-
-.fader .sliderItem {
-	position: absolute;
-	top: 0;
-	left: 0;
-}
-
-.fader .sliderItem.selected {
-    position: relative;
-}
-
-.fader .displayNone {
-	display: none;
-}
-
-.fader .selected {
-	color: #333;
-}
-
-.fader ul {
-    list-style: none;
-    text-align: center;
-}
-
-.fader li {
-    display: inline-block;
-    margin-right: 10px;
-}
-
 
 
 
