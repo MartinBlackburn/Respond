@@ -86,6 +86,10 @@ Fader = function(fader)
         {
             nextSlide = slide;
         }
+        if(slide == 0)
+        {
+            nextSlide = slide;
+        }
         if(slide == -1)
         {
             nextSlide = currentSlide - 1;
