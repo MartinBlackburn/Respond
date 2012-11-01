@@ -14,3 +14,32 @@
     display: inline-block;
     margin-right: 10px;
 }
+
+
+
+
+
+/*----------------------------------------------------------------------------------------------------------------*\
+    Fader
+\*----------------------------------------------------------------------------------------------------------------*/
+.fader {
+	position: relative;
+}
+
+.fader .sliderItem {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.fader .sliderItem.selected {
+    position: relative;
+}
+
+.fader .displayNone {
+	display: none;
+}
+
+.fader .selected {
+	color: #333;
+}
