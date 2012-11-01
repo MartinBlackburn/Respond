@@ -259,6 +259,8 @@ button:before,
 button:hover, 
 .button:hover {
     background: #49B1DE;
+    
+    color: #fff;
 }
 
 

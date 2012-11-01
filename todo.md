@@ -1,6 +1,5 @@
 #to-do list
 
-Add buttons (default, name diff ones?)  
 Add javascript to convert select boxes, radio button and checkboxes into something style-able  
 Add a slider for prototypes  
 Add a fader for prototypes  
