@@ -380,7 +380,7 @@ fieldset, legend {
 }
 
 .hideResize {
-    display: block;
+    display: none;
 }
 
 
