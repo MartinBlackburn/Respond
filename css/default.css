@@ -465,6 +465,6 @@ fieldset, legend {
 /* 980px */
 @media all and (min-width: 980px) {
     .hideResize {
-        dislay: block;
+        display: block;
     }
 }
