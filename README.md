@@ -4,8 +4,6 @@ Respond is a simple framework that aims to help in creating responsive websites 
 
 Example will be a complete website built using Respond
 
-Wireframe will show how to build a quick wireframe using Respond and its wireframe CSS
-
 ##How it works
 ```html
 <div class="row">
