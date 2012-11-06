@@ -250,6 +250,18 @@ button:hover,
     color: #fff;
 }
 
+button.small, 
+.button.small {
+    font-size: 0.7em;
+    line-height: 1em;
+}
+
+button.large, 
+.button.large {
+    font-size: 1.3em;
+    line-height: 1em;
+}
+
 
 
 
