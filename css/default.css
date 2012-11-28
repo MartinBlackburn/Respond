@@ -133,6 +133,11 @@ input, textarea {
     cursor: text;
 }
 
+input[type="checkbox"],
+input[type="radio"] {
+    cursor: pointer;
+}
+
 /* ----- Other ----- */
 .clear {
     float: none;
