@@ -338,11 +338,7 @@ fieldset, legend {
     position: relative;
 }
 
-.row.altBG {
-    background: #f5f5f5;
-}
-
-.oneCol, .twoCol, .threeCol, .fourCol, .fiveCol, .sixCol, .sevenCol, .eightCol, .nineCol, .tenCol, .elevenCol, .twelveCol {
+.row [class*="column-"] {
     width: 100%;
     min-height: 1px;
 }
@@ -356,7 +352,7 @@ fieldset, legend {
     clear: both;
 }
 
-.row .last {
+.row [class*="column-"]:last-child {
     margin-right: 0;
 }
 
@@ -390,55 +386,60 @@ fieldset, legend {
 
 /* 768px */
 @media all and (min-width: 768px) {	
-    .oneCol, .twoCol, .threeCol, .fourCol, .fiveCol, .sixCol, .sevenCol, .eightCol, .nineCol, .tenCol, .elevenCol {
+    .row [class*="column-"] {
         margin-right: 2%;
         float: left;
     }
 
-    .oneCol {
+    .column-1 {
         width: 6.5%;
     }
     
-    .twoCol {
+    .column-2 {
         width: 15%;
     }
     
-    .threeCol {
+    .column-3 {
         width: 23.5%;
     }
     
-    .fourCol {
+    .column-4 {
         width: 32%;
     }
     
-    .fiveCol {
+    .column-5 {
         width: 40.5%;
     }
     
-    .sixCol {
+    .column-6 {
         width: 49%;
     }
     
-    .sevenCol {
+    .column-7 {
         width: 57.5%;
     }
     
-    .eightCol {
+    .column-8 {
         width: 66%;
     }
     
-    .nineCol {
+    .column-9 {
         width: 74.5%;
     }
     
-    .tenCol {
+    .column-10 {
         width: 83%;
     }
     
-    .elevenCol {
+    .column-11 {
         width: 91.5%;
     }
     
+    .column-12 {
+        width: 100%;
+        margin-right: 0;
+    }
+        
     .showTablet {
         display: block;
     }
