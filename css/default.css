@@ -391,51 +391,51 @@ fieldset, legend {
         float: left;
     }
 
-    .column-1 {
+    .row .column-1 {
         width: 6.5%;
     }
     
-    .column-2 {
+    .row .column-2 {
         width: 15%;
     }
     
-    .column-3 {
+    .row .column-3 {
         width: 23.5%;
     }
     
-    .column-4 {
+    .row .column-4 {
         width: 32%;
     }
     
-    .column-5 {
+    .row .column-5 {
         width: 40.5%;
     }
     
-    .column-6 {
+    .row .column-6 {
         width: 49%;
     }
     
-    .column-7 {
+    .row .column-7 {
         width: 57.5%;
     }
     
-    .column-8 {
+    .row .column-8 {
         width: 66%;
     }
     
-    .column-9 {
+    .row .column-9 {
         width: 74.5%;
     }
     
-    .column-10 {
+    .row .column-10 {
         width: 83%;
     }
     
-    .column-11 {
+    .row .column-11 {
         width: 91.5%;
     }
     
-    .column-12 {
+    .row .column-12 {
         width: 100%;
         margin-right: 0;
     }
