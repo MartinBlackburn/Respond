@@ -168,32 +168,30 @@ input[type="radio"] {
 /*----------------------------------------------------------------------------------------------------------------*\
     DEFAULT TEXT
 \*----------------------------------------------------------------------------------------------------------------*/
-body {
-    background: #fff;
-    
-    color: #333;
+body {	
+	color: #333;
     font-family: Arial, sans-serif;
     font-size: 1em;
-    line-height: 1.5em;
+    line-height: 1.2em;
     
     position: relative;
 }
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
+	color: #333;
     font-family: Arial, sans-serif;
-    color: #333;
     font-weight: bold;
 }
 
 h1, .h1 {
     font-size: 2em;
-    line-height: 1.5em;
+    line-height: 1.2em;
 }
 
 h2, .h2 {
     font-size: 1.5em;
-    line-height: 1em;
+    line-height: 1.2em;
 }
 
 h3, .h3 {
@@ -203,17 +201,17 @@ h3, .h3 {
 
 h4, .h4 {
     font-size: 1.125em;
-    line-height: 1.333em;
+    line-height: 1.2em;
 }
 
 h5, .h5 {
     font-size: 1em;
-    line-height: 1.5em;
+    line-height: 1.2em;
 }
 
 h6, .h6 {
     font-size: 1em;
-    line-height: 1.5em;
+    line-height: 1.2em;
 }
 
 a {
@@ -342,8 +340,6 @@ fieldset, legend {
 
 .row {
     width: 100%;
-    
-    background: #fff;
     
     position: relative;
 }
