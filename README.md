@@ -2,8 +2,6 @@
 
 Respond is a simple framework that aims to help in creating responsive websites and wireframes by having a fluid grid and mediaqueries to resize content and collapse columns on smaller displays.
 
-Example will be a complete website built using Respond
-
 ##How it works
 ```html
 <div class="row">

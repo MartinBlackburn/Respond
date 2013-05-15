@@ -1,4 +1,17 @@
 /*----------------------------------------------------------------------------------------------------------------*\
+Respond is a simple framework that aims to help in creating responsive websites and wireframes by having a fluid 
+grid and media queries to resize content and collapse columns on smaller displays.
+
+AUTHOR
+Martin Blackburn - www.martinblackburn.co.uk
+
+GITHUB
+https://github.com/MartinBlackburn/Respond
+
+Version: 1.0
+\*----------------------------------------------------------------------------------------------------------------*/
+
+/*----------------------------------------------------------------------------------------------------------------*\
     RESET
 \*----------------------------------------------------------------------------------------------------------------*/
 /*
@@ -356,12 +369,6 @@ fieldset, legend {
     margin-right: 0;
 }
 
-.hideMobile,
-.showTablet,
-.hideResize {
-    display: none;
-}
-
 
 
 
@@ -369,21 +376,6 @@ fieldset, legend {
 /*----------------------------------------------------------------------------------------------------------------*\
     MEDIA QUERIES
 \*----------------------------------------------------------------------------------------------------------------*/
-/* 320px */
-@media all and (min-width: 0px) {
-}
-
-/* 480px */
-@media all and (min-width: 480px) {
-    .hideMobile {
-        display: block;
-    }
-}
-
-/* 600px */
-@media all and (min-width: 600px) {
-}
-
 /* 768px */
 @media all and (min-width: 768px) {	
     .row [class*="column-"] {
@@ -438,16 +430,5 @@ fieldset, legend {
     .row .column-12 {
         width: 100%;
         margin-right: 0;
-    }
-        
-    .showTablet {
-        display: block;
-    }
-}
-
-/* 980px */
-@media all and (min-width: 980px) {
-    .hideResize {
-        display: block;
     }
 }
