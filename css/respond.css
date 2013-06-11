@@ -64,7 +64,7 @@ del, s {
 
 ins {
     border-bottom: 1px solid #ccc; 
-	text-decoration: none;
+    text-decoration: none;
 }
 
 pre, code, kbd, samp {
@@ -117,7 +117,7 @@ img {
 
 /* ----- Forms ----- */
 input {
-	line-height: 1em;
+    line-height: 1em;
 }
 
 input, select {
@@ -126,7 +126,7 @@ input, select {
 
 /* ----- Tables ----- */
 table, th, td { 
-	border-collapse: collapse;
+    border-collapse: collapse;
     border-spacing: 0;
     vertical-align: top;
     text-align: left; 
@@ -168,8 +168,8 @@ input[type="radio"] {
 /*----------------------------------------------------------------------------------------------------------------*\
     DEFAULT TEXT
 \*----------------------------------------------------------------------------------------------------------------*/
-body {	
-	color: #333;
+body {  
+    color: #333;
     font-family: Arial, sans-serif;
     font-size: 1em;
     line-height: 1.2em;
@@ -179,39 +179,31 @@ body {
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
-	color: #333;
+    color: #333;
     font-family: Arial, sans-serif;
     font-weight: bold;
+    line-height: 1.2em;
 }
 
 h1, .h1 {
     font-size: 2em;
-    line-height: 1.2em;
 }
 
 h2, .h2 {
     font-size: 1.5em;
-    line-height: 1.2em;
 }
 
 h3, .h3 {
     font-size: 1.25em;
-    line-height: 1.2em;
 }
 
 h4, .h4 {
     font-size: 1.125em;
-    line-height: 1.2em;
 }
 
-h5, .h5 {
-    font-size: 1em;
-    line-height: 1.2em;
-}
-
+h5, .h5,
 h6, .h6 {
     font-size: 1em;
-    line-height: 1.2em;
 }
 
 a {
@@ -238,17 +230,17 @@ a:hover {
 \*----------------------------------------------------------------------------------------------------------------*/
 button, 
 .button {
-	padding: 5px 10px;
-	border: 1px solid #077BA8;
-	display: inline-block;
-	
-	background: #2290BF;
-	
-	font-size: 1em;
-	line-height: 1em;
-	color: #fff;
-	
-	-webkit-transition: all 0.2s ease-in;  
+    padding: 5px 10px;
+    border: 1px solid #077BA8;
+    display: inline-block;
+
+    background: #2290BF;
+
+    font-size: 1em;
+    line-height: 1em;
+    color: #fff;
+
+    -webkit-transition: all 0.2s ease-in;  
     -moz-transition: all 0.2s ease-in;  
     -ms-transition: all 0.2s ease-in;  
     -o-transition: all 0.2s ease-in;  
@@ -262,18 +254,6 @@ button:hover,
     color: #fff;
 }
 
-button.small, 
-.button.small {
-    font-size: 0.7em;
-    line-height: 1em;
-}
-
-button.large, 
-.button.large {
-    font-size: 1.3em;
-    line-height: 1em;
-}
-
 
 
 
@@ -282,13 +262,13 @@ button.large,
     FORM ELEMENTS
 \*----------------------------------------------------------------------------------------------------------------*/
 label {
-	width: 100%;
-	display: block;
+    width: 100%;
+    display: block;
 }
 
 input, 
 textarea {
-	width: 100%;
+    width: 100%;
     padding: 5px;
     border: 1px solid #ccc;
     margin-bottom: 10px;
@@ -298,7 +278,7 @@ textarea {
 }
 
 textarea {
-	height: 150px;
+    height: 150px;
 }
 
 input:focus, 
@@ -308,15 +288,15 @@ textarea:focus {
 
 input[type="checkbox"],
 input[type="radio"] {
-	width: auto;
-	padding: 0;
-	border: 0;
-	display: inline-block;
+    width: auto;
+    padding: 0;
+    border: 0;
+    display: inline-block;
 }
 
 select {
-	margin-bottom: 10px;
-	display: block;
+    margin-bottom: 10px;
+    display: block;
 }
 
 fieldset, legend {
@@ -362,6 +342,10 @@ fieldset, legend {
     margin-right: 0;
 }
 
+.row [class*="column-"].last {
+    margin-right: 0;
+}
+
 
 
 
@@ -370,7 +354,7 @@ fieldset, legend {
     MEDIA QUERIES
 \*----------------------------------------------------------------------------------------------------------------*/
 /* 768px */
-@media all and (min-width: 768px) {	
+@media all and (min-width: 768px) { 
     .row [class*="column-"] {
         margin-right: 2%;
         float: left;
