@@ -315,8 +315,6 @@ fieldset, legend {
     padding: 0 20px;
     margin: 0 auto;
     
-    font-size: 0;
-    
     position: relative;
 }
 
@@ -329,10 +327,10 @@ fieldset, legend {
 .row [class*="column-"] {
     width: 100%;
     min-height: 1px;
+    margin-right: -0.25em;
+    margin-bottom: 1em;
     vertical-align: top;
     display: inline-block;
-    
-    font-size: 1em;
 }
 
 .row:after,
@@ -359,6 +357,7 @@ fieldset, legend {
 @media all and (min-width: 768px) { 
     .row [class*="column-"] {
         margin-left: 2%;
+        margin-bottom: 0;
     }
 
     .row .column-1 {
