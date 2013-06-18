@@ -8,6 +8,7 @@ A full width container, this allows for a background to span the full width of t
 
 **Content container (.content)**  
 This a container that is centered within a .row, given a max-width.
+If you add the class .centered to the .content (.content.centered), it will center align the columns.
 
 **Columns (.column-number)**  
 Columns must add up to 12 or less. You can nest columns within columns.
