@@ -318,6 +318,10 @@ fieldset, legend {
     position: relative;
 }
 
+.content.centered {
+    text-align: center;
+}
+
 .row {
     width: 100%;
     
@@ -331,6 +335,8 @@ fieldset, legend {
     margin-bottom: 1em;
     vertical-align: top;
     display: inline-block;
+    
+    text-align: left;
 }
 
 .row:after,
