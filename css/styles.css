@@ -57,6 +57,8 @@ a:hover {
 
 .nav ul {
     list-style: none;
+    
+    text-align: center;
 }
 
 .nav li {
