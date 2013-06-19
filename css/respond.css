@@ -412,5 +412,6 @@ fieldset, legend {
     .row .column-12 {
         width: 100%;
         margin-left: 0;
+        margin-right: 0;
     }
 }
