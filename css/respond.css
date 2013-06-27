@@ -327,9 +327,7 @@ fieldset, legend {
 .row [class*="column-"] {
     width: 100%;
     min-height: 1px;
-    margin-right: -0.25em;
     vertical-align: top;
-    display: inline-block;
 }
 
 .row:after,
@@ -341,8 +339,8 @@ fieldset, legend {
     clear: both;
 }
 
-.row [class*="column-"]:first-child {
-    margin-left: 0;
+.row [class*="column-"]:last-child {
+    margin-right: 0;
 }
 
 
@@ -355,8 +353,8 @@ fieldset, legend {
 /* 768px */
 @media all and (min-width: 768px) { 
     .row [class*="column-"] {
-        margin-left: 2%;
-        margin-bottom: 0;
+        margin-right: 2%;
+        float: left;
     }
 
     .row .column-1 {
@@ -405,7 +403,6 @@ fieldset, legend {
     
     .row .column-12 {
         width: 100%;
-        margin-left: 0;
         margin-right: 0;
     }
 }
