@@ -76,7 +76,7 @@ del, s {
 }
 
 ins {
-    border-bottom: 1px solid $default-border-color; 
+    border-bottom: 1px solid $border-color; 
     text-decoration: none;
 }
 
@@ -85,7 +85,7 @@ pre, code, kbd, samp {
 }
 
 pre {
-    padding: 15px;
+    padding: $spacing;
     white-space: pre; 
     white-space: pre-wrap; 
     word-wrap: break-word;

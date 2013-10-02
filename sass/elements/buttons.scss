@@ -1,7 +1,10 @@
+/*----------------------------------------------------------------------------------------------------------------*\
+    BUTTONS
+\*----------------------------------------------------------------------------------------------------------------*/
 button, 
 .button {
-    padding: 5px 10px;
-    border: 1px solid #077BA8;
+    padding: $half-spacing $spacing;
+    border: 1px solid $border-color;
     display: inline-block;
 
     background: #2290BF;

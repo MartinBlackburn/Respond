@@ -1,16 +1,13 @@
+/*----------------------------------------------------------------------------------------------------------------*\
+    LINKS
+\*----------------------------------------------------------------------------------------------------------------*/
 a {
-    color: #2290BF;
+    color: $alt-font-color;
     text-decoration: none;
     
     cursor: pointer;
-    
-    -webkit-transition: all 0.2s ease-in;  
-    -moz-transition: all 0.2s ease-in;  
-    -ms-transition: all 0.2s ease-in;  
-    -o-transition: all 0.2s ease-in;  
-    transition: all 0.2s ease-in;
 }
 
 a:hover {
-    color: #49B1DE;
+    text-decoration: none;
 }

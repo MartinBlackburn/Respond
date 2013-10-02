@@ -2,12 +2,24 @@
     DEFAULT SETTINGS
 \*----------------------------------------------------------------------------------------------------------------*/
 /**
- * Default font family, size and color
+ * Default font family, size, line height and color
+ *
+ * 1. Set to use the golden ratio (1.62 rounded to 2 decimal places)
  */
-$font-size:   16px;
-$line-height: 24px;
-$font-family: Arial, sans-serif;
-$font-color:  #535353;
+$font-size:      16px;
+$line-height:    25.92px; /* 1 */
+$font-family:    Arial, sans-serif;
+$font-color:     #535353;
+
+
+
+
+
+/**
+ * Alternate colors
+ * For headings and links
+ */
+$alt-font-color: #2290BF;
 
 
 
@@ -26,5 +38,5 @@ $border-color: #ccc;
  * Spacing amounts
  * Respond calculates these for you, its nice like that.
  */
-$spacing: $line-height;
+$spacing:      $line-height;
 $half-spacing: $spacing / 2;

@@ -43,7 +43,13 @@
  * Elements
  */
 @import "elements/buttons";
+@import "elements/embeds";
+@import "elements/forms";
 @import "elements/headings";
+@import "elements/links";
+@import "elements/lists";
+@import "elements/quotes";
+@import "elements/tables";
 
 
 
@@ -52,4 +58,6 @@
 /*
  * Blocks
  */
+@import "blocks/breadcrumb";
 @import "blocks/nav";
+@import "blocks/pagination";
