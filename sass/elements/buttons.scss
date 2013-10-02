@@ -1,0 +1,27 @@
+button, 
+.button {
+    padding: 5px 10px;
+    border: 1px solid #077BA8;
+    display: inline-block;
+
+    background: #2290BF;
+
+    font-size: 1em;
+    line-height: 1em;
+    color: #fff;
+    
+    cursor: pointer;
+
+    -webkit-transition: all 0.2s ease-in;  
+    -moz-transition: all 0.2s ease-in;  
+    -ms-transition: all 0.2s ease-in;  
+    -o-transition: all 0.2s ease-in;  
+    transition: all 0.2s ease-in;
+}
+
+button:hover, 
+.button:hover {
+    background: #49B1DE;
+    
+    color: #fff;
+}

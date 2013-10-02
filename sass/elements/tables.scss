@@ -1,0 +1,15 @@
+table {
+    width: 100%;
+}
+
+table, 
+th, 
+td { 
+    padding: $default-spacing;
+    border-collapse: collapse;
+    border-spacing: 0;
+    vertical-align: top;
+    
+    text-align: left;
+    font-weight: normal;
+}

@@ -1,0 +1,84 @@
+/*----------------------------------------------------------------------------------------------------------------*\
+    GRIDS
+\*----------------------------------------------------------------------------------------------------------------*/
+.row {
+    width: 100%;
+    
+    position: relative;
+}
+
+.row [class*="column-"] {
+    width: 100%;
+    min-height: 1px;
+    vertical-align: top;
+}
+
+.row:after,
+.content:after {
+    height: 0;
+    display: block;
+    content: "";
+    visibility: hidden;
+    clear: both;
+}
+
+.row [class*="column-"]:last-child {
+    margin-right: 0;
+}
+
+
+@media all and (min-width: 768px) { 
+    .row [class*="column-"] {
+        margin-right: 2%;
+        float: left;
+    }
+
+    .row .column-1 {
+        width: 6.5%;
+    }
+    
+    .row .column-2 {
+        width: 15%;
+    }
+    
+    .row .column-3 {
+        width: 23.5%;
+    }
+    
+    .row .column-4 {
+        width: 32%;
+    }
+    
+    .row .column-5 {
+        width: 40.5%;
+    }
+    
+    .row .column-6 {
+        width: 49%;
+    }
+    
+    .row .column-7 {
+        width: 57.5%;
+    }
+    
+    .row .column-8 {
+        width: 66%;
+    }
+    
+    .row .column-9 {
+        width: 74.5%;
+    }
+    
+    .row .column-10 {
+        width: 83%;
+    }
+    
+    .row .column-11 {
+        width: 91.5%;
+    }
+    
+    .row .column-12 {
+        width: 100%;
+        margin-right: 0;
+    }
+}

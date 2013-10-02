@@ -1,0 +1,30 @@
+/*----------------------------------------------------------------------------------------------------------------*\
+    DEFAULT SETTINGS
+\*----------------------------------------------------------------------------------------------------------------*/
+/**
+ * Default font family, size and color
+ */
+$font-size:   16px;
+$line-height: 24px;
+$font-family: Arial, sans-serif;
+$font-color:  #535353;
+
+
+
+
+
+/**
+ * Default border colors
+ */
+$border-color: #ccc;
+
+
+
+
+
+/**
+ * Spacing amounts
+ * Respond calculates these for you, its nice like that.
+ */
+$spacing: $line-height;
+$half-spacing: $spacing / 2;

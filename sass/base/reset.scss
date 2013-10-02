@@ -1,0 +1,121 @@
+/*----------------------------------------------------------------------------------------------------------------*\
+    RESET
+    
+    TODO: look at creating a better reset
+\*----------------------------------------------------------------------------------------------------------------*/
+/*
+ * Prevent iOS text size adjust after orientation change, without disabling user zoom.
+ */
+html {
+    min-height: 100%;
+    overflow-y: scroll;
+    
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+/*
+ * Set default font family, color and size.
+ */
+body {  
+    color: $font-color;
+    @include font-size($font-size);
+    font-family: $font-family;
+}
+
+/*
+ * Remove default margin, padding and border. Also set font size to 100% and inherit for some browsers
+ */
+a, abbr, address, article, aside, audio, b, blockquote, body, canvas, caption, cite, code, dd, del, details, dfn, dl, 
+dt, em, fieldset, figcaption, figure, footer, form, header, hgroup, h1, h2, h3, h4, h5, h6, html, i, iframe, img, 
+ins, kbd, label, legend, li, mark, menu, nav, object, ol, p, pre, q, samp, section, small, span, strong, sub, summary, 
+sup, table, tbody, td, th, thead, time, tfoot, tr, ul, var, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/**
+ * HTML 5
+ */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+/**
+ * Give a help cursor
+ */
+abbr[title], dfn[title] { 
+    border-bottom: 1px dotted $border-color; 
+    cursor: help;
+}
+
+/**
+ * Typography
+ */
+strong, mark, b {
+    font-weight: bold; 
+    font-style: inherit;
+}
+
+em, i, cite, q, address, dfn, var {
+    font-style: italic; 
+    font-weight: inherit;
+}
+
+small {
+    font-size: 80%;
+}
+
+del, s { 
+    text-decoration: line-through;
+}
+
+ins {
+    border-bottom: 1px solid $default-border-color; 
+    text-decoration: none;
+}
+
+pre, code, kbd, samp {
+    font-family: monospace, sans-serif;
+}
+
+pre {
+    padding: 15px;
+    white-space: pre; 
+    white-space: pre-wrap; 
+    word-wrap: break-word;
+}
+
+/**
+ * Images
+ */
+img {
+    width: 100%;
+    height: auto;
+}
+
+:focus {
+    outline: 0;
+}
+
+/**
+ * Clear
+ */
+.clear {
+    float: none;
+    clear: both;
+}
+
+/**
+ * Box-sizing
+ */
+*,
+*:before,
+*:after {
+    @include vendor(box-sizing, border-box);
+}
