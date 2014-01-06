@@ -121,6 +121,10 @@ input, select {
     vertical-align: middle;
 }
 
+input, textarea, select {
+    margin: 0;
+}
+
 /* ----- Tables ----- */
 table, th, td { 
     border-collapse: collapse;
